@@ -15,7 +15,7 @@
         <%= data.title %>
     </li>
     <li class="list-group-item">
-        <%= data.memo.split(/\r\n\|\n|\r/).join('<br>') %>
+        <%- data.memo.split(/\r\n\|\n|\r/).join('<br>') %>
     </li>
     <li class="list-group-item text-center">
         終了日時： <%= data["datetime(finished, '+9 hours')"] %>
